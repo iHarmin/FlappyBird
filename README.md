@@ -4,6 +4,14 @@ A Flappy Bird clone made using Python and the Pygame library.
 
 ---
 
+## Author Information
+
+- **Name**: [Harmin Patel](https://github.com/iHarmin)
+- **Date Created**: 2nd May, 2025
+- **Last Edited**: 10th May, 2025
+
+---
+
 ## Requirements
 
 - Python 3.x

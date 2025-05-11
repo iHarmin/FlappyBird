@@ -1,10 +1,10 @@
-#!/usr/bin/env python
-
 # Flappy Bird Game
 # Author: Harmin Patel
-# Date Created: 2nd May 2025
-# Last Edited: 10th May 2025
+# Date Created: 2nd May, 2025
+# Last Edited: 10th May, 2025
 # Description: A simple Flappy Bird game using Pygame library
+
+#!/usr/bin/env python
 
 import pygame
 import sys
@@ -16,9 +16,7 @@ class FlappyBird:
         self.bird = pygame.Rect(65, 50, 50, 50)
         self.background = pygame.image.load("assets/Background.png").convert()
         # Bird images
-        self.birdArray = [pygame.image.load("assets/UpsideFlap.png").convert_alpha(),
-                            pygame.image.load("assets/DownsideFlap.png").convert_alpha(),
-                            pygame.image.load("assets/Dead.png")]
+        self.birdArray = [pygame.image.load("assets/UpsideFlap.png").convert_alpha(), pygame.image.load("assets/DownsideFlap.png").convert_alpha(), pygame.image.load("assets/Dead.png")]
         # Wall images
         self.wallUp = pygame.image.load("assets/Bottom.png").convert_alpha()
         self.wallDown = pygame.image.load("assets/Top.png").convert_alpha()
@@ -53,6 +51,7 @@ class FlappyBird:
         else:
             self.birdY += self.gravity
             self.gravity += 0.2
+
         self.bird[1] = self.birdY
         
         # Check for collisions with the walls
