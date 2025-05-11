@@ -54,7 +54,7 @@ class FlappyBird:
             self.birdY += self.gravity
             self.gravity += 0.2
         self.bird[1] = self.birdY
-
+        
         # Check for collisions with the walls
         upRect = pygame.Rect(self.wallx,
                              360 + self.gap - self.offset + 10,
@@ -70,7 +70,7 @@ class FlappyBird:
             self.dead = True
 
         # Check if the bird goes out of bounds
-        if not 0 < self.bird[1] < 720:
+        if not self.bird[1] < 720:
             self.dead = True
             self.bird[1] = 50
             self.jump = 0
